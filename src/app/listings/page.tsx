@@ -1,6 +1,6 @@
 import { api, HydrateClient } from "~/trpc/server";
 
-export default async function Home() {
+export default async function ListingsPage() {
   const listings = await api.listing.all();
 
   return (
